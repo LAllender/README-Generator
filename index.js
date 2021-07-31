@@ -1,13 +1,17 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const axios = require('axios');
+const axios = require("axios");
 const api = require("./utils/api.js");
 const generateMarkdown = require("./utils/generateMarkdown");
-const { error } = require("console");
+const filename = "GeneratedREADME.md";
+
 
 // TODO: Create an array of questions for user input
-const questions = [
+async function init() {
+  try {
+    const filename = "GeneratedREADME.md";
+    const questions = await inquirer.prompt([
     {
         type: "input",
         message: "What is your GitHub username?",
@@ -53,28 +57,39 @@ const questions = [
                  'BSD 3-Clause',
                  'GNU General Public License (GPL)'
         ]},
-      
-];
+    ]);
+    const userInfo = await api.getUser(questions.username);
+    questions.email = userInfo.email;
+    questions.profilePic = userInfo.avatar_url;
+    const answers = generateMarkdown(questions);
+    fs.writeFile(filename, answers, function () {
+      console.log("Successfully generated README.md file!");
+    });
+  } catch (err) {
+    console.log(err);
+  }
+} 
 
+
+/* TODO: Create a function to initialize app
+function init() {
+  inquirer.prompt(questions).then(resp => {
+    writeToFile(resp);
+  });
+}
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  const filename = "GeneratedREADME.md";
+function writeToFile(responses) {
   const userInfo = api.getUser(questions.username);
   questions.email = userInfo.email;
   questions.profilePic = userInfo.avatar_url;
   const answers = generateMarkdown(questions);
-  fs.writeFile(filename, answers, function() {
-    console.log("Successfully generated README.md file!");
-  });
-  } error(err) = error.message(`An error occured while writing the file`);
-    console.log(err);
-  
+  fs.writeFile(filename, answers, (err) => err ? 
+  console.log('An error occured while writing the file')
+  : console.log(("Successfully generated README.md file!")
+  ));
+}*/
 
-// TODO: Create a function to initialize app
-function init() {
-    
-}
 
 // Function call to initialize app
 init();
