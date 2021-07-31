@@ -2,19 +2,19 @@
           # Go Nuts
 
           ## Description 
-          This is an app designed to assist the user to choose the perfect nut for every occasion.
+          This app is designed to assist the user to choose the perfect nut for every occasion.
 
           ### Installation 
-          follow the link
+          Follow the url
           
           ### Usage 
-          follow the prompts
+          Follow the prompts
           
           ### Credits 
           
 
           ### License 
-          Apache 2.0 License
+          [![License](https://img.shields,io/badge/License-MIT license-yellow.svg)](https://opensource.org/licenses/MIT license)
 
           <img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4">
 

@@ -1,13 +1,12 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 const api = require("./utils/api.js");
 const generateMarkdown = require("./utils/generateMarkdown");
-const filename = "GeneratedREADME.md";
 
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 async function init() {
   try {
     const filename = "GeneratedREADME.md";
@@ -70,15 +69,7 @@ async function init() {
   }
 } 
 
-
-/* TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions).then(resp => {
-    writeToFile(resp);
-  });
-}
-
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(responses) {
   const userInfo = api.getUser(questions.username);
   questions.email = userInfo.email;
@@ -88,7 +79,7 @@ function writeToFile(responses) {
   console.log('An error occured while writing the file')
   : console.log(("Successfully generated README.md file!")
   ));
-}*/
+}
 
 
 // Function call to initialize app
