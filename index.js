@@ -1,9 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const README = require("create-readme")
+const axios = require('axios');
 const api = require("./utils/api.js");
 const generateMarkdown = require("./utils/generateMarkdown");
+const { error } = require("console");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -19,12 +20,12 @@ const questions = [
       },
       {
         type: "input",
-        message: "Enter the title of your repo?",
+        message: "Enter the title of your app?",
         name: "title",
       },
       {
-        type: "editor",
-        message: "Enter a description for your repo",
+        type: "input",
+        message: "Enter a description for your app and it's purpose",
         name: "description",
       },
       {
@@ -52,23 +53,27 @@ const questions = [
                  'BSD 3-Clause',
                  'GNU General Public License (GPL)'
         ]},
-      {
-        type: "input",
-        message: "Please enter contributor info (optional)",
-        name: "contributing",
-      },
+      
 ];
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
-}
+  const filename = "GeneratedREADME.md";
+  const userInfo = api.getUser(questions.username);
+  questions.email = userInfo.email;
+  questions.profilePic = userInfo.avatar_url;
+  const answers = generateMarkdown(questions);
+  fs.writeFile(filename, answers, function() {
+    console.log("Successfully generated README.md file!");
+  });
+  } error(err) = error.message(`An error occured while writing the file`);
+    console.log(err);
+  
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then(resp => {
-        generateReadMe(resp);
-    });
+    
 }
 
 // Function call to initialize app
