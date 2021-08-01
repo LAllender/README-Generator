@@ -27,7 +27,7 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 
 ## <h2 style="text-align:center" id="installation">Installation</h2> 
-This project can be viewed at [Cryptfolio](https://lallender.github.io/Cryptfolio/)
+The application will be invoked by using the following command: node index.js
 
 ## <h2 style="text-align:center" id="credits"> Credits</h2>
 Monash University Full Stack Boot Camp on behalf of Trilogy Education - 2021 (Provided Assets)
@@ -37,9 +37,8 @@ inquirer
 axios
 
 ## <h2 style="text-align:center">License</h2>
-[License: MIT]<img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg">
+<img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg">
 
 ## <h2 style="text-align:center">Badges</h2>
 
 <img alt="JS" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
->>>>>>> main
