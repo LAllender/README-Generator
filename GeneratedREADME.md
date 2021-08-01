@@ -10,17 +10,16 @@
 <p>Access via the url</p>
           
 <h3>Usage</h3> 
-<p>Follow in app prompts</p>
+<p>Follow the in app prompts</p>
           
 <h3>Credits</h3>
 <p></p>
 
 <h3>License</h3> 
-<img alt="License Badge" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg">
+<img alt="License Badge" src="https://img.shields.io/badge/License-MIT-yellow.svg">
 
 <img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4" width="200" height="200">
 
-<h3>Author</h>
 <p>LAllender</p> 
 <p>http//:github.com/LAllender</p>
 <h3></h3>
