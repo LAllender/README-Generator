@@ -16,7 +16,7 @@
 ### <h2>License</h2> 
 <img alt="License Badge" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg">
 
-<img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4" width="200" height="250">
+<img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4" width="200" height="200">
 
 ## <h3></h3>
 
