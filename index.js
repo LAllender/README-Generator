@@ -53,7 +53,7 @@ async function init() {
         choices: [
            'No license :none',
            'MIT :MIT-yellow',
-           'Apache2.0 :Apache%202.0-blue',
+           'Apache-2.0 :Apache%202.0-blue',
            'BSD-3-Clause :BSD%203--Clause-blue',
            'gpl-3.0 :GPLv3-blue',
         ]},

@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
   if (myLicenseCode === "none") {
     return '';
   }
-  return `[![License](https://img.shields,io/badge/License-${myLicenseCode}.svg)](${renderLicenseLink(myLicense)})`
+  return `[![License](https://img.shields.io/badge/License-${myLicenseCode}.svg)](${renderLicenseLink(myLicense)})`
   }
 
 // Create a function that returns the license link
