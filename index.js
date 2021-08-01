@@ -52,10 +52,10 @@ async function init() {
         default: "No license",
         choices: [
            'No license :none',
-           'MIT license :MIT-yellow',
-           'Apache 2.0 License :Apache%202.0-blue',
-           'BSD 3-Clause :BSD%203--Clause-blue',
-           'GNU General Public License (GPL) :GPLv3-blue',
+           'MIT :MIT-yellow',
+           'Apache2.0 :Apache%202.0-blue',
+           'BSD-3-Clause :BSD%203--Clause-blue',
+           'gpl-3.0 :GPLv3-blue',
         ]},
     ]);
     const userInfo = await api.getUser(questions.username);

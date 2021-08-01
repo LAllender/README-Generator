@@ -5,31 +5,32 @@ const api = require("./api.js");
 
 
 function renderLicenseBadge(license) {
-  const myLicense = license.split(':');
-  const myLicenseCode = myLicense[1]; 
+  const myLicenseSplit = license.split(':');
+  const myLicenseCode = myLicenseSplit[1]; 
+  const myLicense = myLicenseSplit[0];
  
   if (myLicenseCode === "none") {
     return '';
   }
-  return `[![License](https://img.shields,io/badge/License-${myLicenseCode}.svg)](${renderLicenseLink(myLicenseCode)})`
+  return `[![License](https://img.shields,io/badge/License-${myLicenseCode}.svg)](${renderLicenseLink(myLicense)})`
   }
 
 // Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(myLicenseCode) {
-  if (myLicenseCode === "none") {
+function renderLicenseLink(myLicense) {
+  if (myLicense === "No License") {
     return '';
   }
-  return `https://opensource.org/licenses/${myLicenseCode}`
+  return `https://opensource.org/licenses/${myLicense}`
 }
 
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(myLicenseCode) {
-  if (myLicenseCode === "none") {
+function renderLicenseSection(myLicense) {
+  if (myLicense === "No License") {
     return '';
   }
-  return renderLicenseBadge(myLicenseCode);
+  return renderLicenseBadge(myLicense);
 }
 
 // Create a function to generate markdown for README
@@ -50,7 +51,7 @@ function generateMarkdown(data) {
 <h3>${data.credits}</h3>
 
 ### <h2>License</h2> 
-<h3>${renderLicenseBadge(data.license)}</h3>
+<h3>${renderLicenseSection(data.license)}</h3>
 
 <img alt="GitHub Profile Pic" src="${data.profilePic}">
 
