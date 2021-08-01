@@ -14,7 +14,7 @@
 <h3></h3>
 
 ### <h2>License</h2> 
-<h3>[![License](https://img.shields,io/badge/License-MIT license-yellow.svg)](https://opensource.org/licenses/MIT license)</h3>
+<h3>[License](https://img.shields,io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</h3>
 
 <img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4">
 
