@@ -47,14 +47,15 @@ async function init() {
         name: "credits",
       },
       {
-        type: "rawlist",
+        type: "list",
         name: "license",
         default: "No license",
-        choices: ['No license',
-                 'MIT license',
-                 'Apache 2.0 License',
-                 'BSD 3-Clause',
-                 'GNU General Public License (GPL)'
+        choices: [
+           'No license :none',
+           'MIT license :MIT-yellow',
+           'Apache 2.0 License :Apache%202.0-blue',
+           'BSD 3-Clause :BSD%203--Clause-blue',
+           'GNU General Public License (GPL) :GPLv3-blue',
         ]},
     ]);
     const userInfo = await api.getUser(questions.username);

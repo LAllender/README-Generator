@@ -2,29 +2,34 @@ const api = require("./api.js");
 
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
+
+
 function renderLicenseBadge(license) {
-  if (license === "No licence") {
+  const myLicense = license.split(':');
+  const myLicenseCode = myLicense[1]; 
+ 
+  if (myLicenseCode === "none") {
     return '';
   }
-  return `[![License](https://img.shields,io/badge/License-${license}-yellow.svg)](${renderLicenseLink(license)})`
+  return `[License](https://img.shields,io/badge/License-${myLicenseCode}.svg)](${renderLicenseLink(myLicenseCode)})`
   }
 
 // Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license === "No license") {
+function renderLicenseLink(myLicenseCode) {
+  if (myLicenseCode === "none") {
     return '';
   }
-  return `https://opensource.org/licenses/${license}`
+  return `https://opensource.org/licenses/${myLicenseCode}`
 }
 
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license === "No licence") {
+function renderLicenseSection(myLicenseCode) {
+  if (myLicenseCode === "none") {
     return '';
   }
-  return renderLicenseBadge(license);
+  return renderLicenseBadge(myLicenseCode);
 }
 
 // Create a function to generate markdown for README
