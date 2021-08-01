@@ -57,7 +57,6 @@ ${renderLicenseSection(data.license)}
 
 <img alt="GitHub Profile Pic" src="${data.profilePic}" width="200" height="200">
 
-<h3>Author</h>
 <p>${data.username}</p> 
 <p>http//:github.com/${data.username}</p>
 <h3>${data.email || ""}</h3>
