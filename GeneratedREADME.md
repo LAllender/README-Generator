@@ -5,7 +5,11 @@
 <p>This app is designed to assist the user to choose the perfect nut for every occasion.</p>
 
 ### <h2>Installation</h2> 
+<<<<<<< HEAD
 <p>follow the link https//:nobbiesnuts.com</p>
+=======
+<p></p>
+>>>>>>> fcbd06e2a0054c09f0492d201c2ea7987e463b59
           
 ### <h2>Usage</h2> 
 <p>follow the in app prompts</p>
@@ -20,5 +24,9 @@
 
 ## <h3></h3>
 
+<<<<<<< HEAD
 ## <h2>Creator Username</h2>
 <p>LAllender</p>
+=======
+## <p>LAllender</p>
+>>>>>>> fcbd06e2a0054c09f0492d201c2ea7987e463b59
