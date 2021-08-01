@@ -41,17 +41,17 @@ function generateMarkdown(data) {
 ### <h2>Usage</h2> 
 <h3>${data.usage}</h3>
           
-          ### <h2>Credits</h2>
-          <h3>${data.credits}</h3>
+### <h2>Credits</h2>
+<h3>${data.credits}</h3>
 
-          ### <h2>License</h2> 
-          <h3>${renderLicenseBadge(data.license)}</h3>
+### <h2>License</h2> 
+<h3>${renderLicenseBadge(data.license)}</h3>
 
-          <img alt="GitHub Profile Pic" src="${data.profilePic}">
+<img alt="GitHub Profile Pic" src="${data.profilePic}">
 
-          ## <h3>${data.email || ""}</h3>
+## <h3>${data.email || ""}</h3>
 
-          ## <h3>${data.username}</h3>
+## <h3>${data.username}</h3>
 `;
 }
 
