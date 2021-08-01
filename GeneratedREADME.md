@@ -14,11 +14,7 @@
 <h3></h3>
 
 ### <h2>License</h2> 
-<<<<<<< HEAD
-<h3>[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)</h3>
-=======
-<h3>[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache2.0 )</h3>
->>>>>>> c53ee2b848eb3dc95f406db062574ff3903475fd
+<h3>[License Badge]: https://img.shields.io/badge/License-Apache%202.0-blue.svg</h3>
 
 <img alt="GitHub Profile Pic" src="https://avatars.githubusercontent.com/u/83952257?v=4">
 
